@@ -4,6 +4,16 @@
 Um projeto simple em Python usando framework flask e postgreSQL.
 
 
+### ________________________________________
+### Crie um arquivo config.py
+import os
+
+class Config:
+    SECRET_KEY = ''
+    SQLALCHEMY_DATABASE_URI = 'postgresql://usuario:senha@localhost:5432/calculationbasal'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+
 
 
 
