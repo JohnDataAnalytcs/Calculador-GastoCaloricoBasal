@@ -1,0 +1,56 @@
+/* Define o plano de fundo da página */
+.body_style {
+    background-image: url('/static/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+:root{
+    --corAzul: #1119cb;
+
+}
+
+
+/* Define o estilo do container principal */
+.body_image {
+    background: url('{{ url_for("static", filename="background.jpg") }}') !important;
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    color: #ffffff; /* Cor do texto para contraste */
+}
+
+
+.container {
+    max-width: 600px;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+}
+
+h1, h3 {
+    color: var(--corAzul);
+}
+
+.btn-primary {
+    background-color: var(--corAzul);
+    border-color: var(--corAzul);
+}
+
+.btn-primary:hover {
+    background-color: #2575fc;
+    border-color: #2575fc;
+}
+.card {
+    background-color: #02061cfa;
+}
+.cardBackground {
+    background-color: #1111;
+}
+.hidden {
+    display: none;
+}
